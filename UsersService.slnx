@@ -1,7 +1,9 @@
 <Solution>
   <Folder Name="/src/">
+    <File Path="src\Directory.Packages.props" />
     <Project Path="src/UsersService.Application/UsersService.Application.csproj" />
     <Project Path="src/UsersService.Domain/UsersService.Domain.csproj" />
+    <Project Path="src/UsersService.External/UsersService.External.csproj" />
   </Folder>
   <Folder Name="/tests/" />
 </Solution>
