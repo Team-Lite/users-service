@@ -3,6 +3,7 @@
     <File Path="src\Directory.Packages.props" />
     <Project Path="src/UsersService.Application/UsersService.Application.csproj" />
     <Project Path="src/UsersService.Domain/UsersService.Domain.csproj" />
+    <Project Path="src/UsersService.Errors/UsersService.Errors.csproj" />
     <Project Path="src/UsersService.External/UsersService.External.csproj" />
   </Folder>
   <Folder Name="/tests/" />

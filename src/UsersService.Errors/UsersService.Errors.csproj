@@ -7,12 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\UsersService.Domain\UsersService.Domain.csproj" />
-      <ProjectReference Include="..\UsersService.Errors\UsersService.Errors.csproj" />
-      <ProjectReference Include="..\UsersService.External\UsersService.External.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
       <PackageReference Include="FluentResults" />
     </ItemGroup>
 
