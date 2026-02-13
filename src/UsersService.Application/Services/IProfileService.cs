@@ -3,11 +3,11 @@ using UsersService.Domain.Entities;
 
 namespace UsersService.Application.Services;
 
-internal interface IProfileService
+public interface IProfileService
 {
     Task<UserProfile?> GetUserProfileByIdAsync(Guid userId);
     
-    Task<Result> CreateUserProfileAsync(Guid userId);
+    Task<Result> CreateUserProfileAsync(Guid userId, string shownName);
 
-    Task<Result> UpdateUserProfileStatus(Guid userId, string newStatus);
+    Task<Result> UpdateUserProfileStatusAsync(Guid userId, string newStatus);
 }

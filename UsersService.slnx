@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/src/">
     <File Path="src\Directory.Packages.props" />
+    <Project Path="src/UsersService.API/UsersService.API.csproj" />
     <Project Path="src/UsersService.Application/UsersService.Application.csproj" />
     <Project Path="src/UsersService.Domain/UsersService.Domain.csproj" />
     <Project Path="src/UsersService.Errors/UsersService.Errors.csproj" />

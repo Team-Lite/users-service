@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi"/>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\UsersService.Application\UsersService.Application.csproj" />
+      <ProjectReference Include="..\UsersService.Errors\UsersService.Errors.csproj" />
+      <ProjectReference Include="..\UsersService.External\UsersService.External.csproj" />
+    </ItemGroup>
+
+</Project>

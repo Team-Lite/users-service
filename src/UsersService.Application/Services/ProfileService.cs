@@ -19,9 +19,9 @@ internal sealed class ProfileService : IProfileService
     public Task<UserProfile?> GetUserProfileByIdAsync(Guid userId) => 
         _context.Profiles.FirstOrDefaultAsync(p => p.Id == userId);
 
-    public async Task<Result> CreateUserProfileAsync(Guid userId)
+    public async Task<Result> CreateUserProfileAsync(Guid userId, string shwonName)
     {
-        UserProfile userProfile = UserProfile.CreateWithId(userId);
+        UserProfile userProfile = UserProfile.CreateWithId(userId, shwonName);
 
         _context.Profiles.Add(userProfile);
 
@@ -38,7 +38,7 @@ internal sealed class ProfileService : IProfileService
         }
     }
 
-    public async Task<Result> UpdateUserProfileStatus(Guid userId, string newStatus)
+    public async Task<Result> UpdateUserProfileStatusAsync(Guid userId, string newStatus)
     {
         UserProfile? profile = await _context
             .Profiles
